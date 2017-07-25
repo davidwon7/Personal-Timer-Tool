@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<div class="bg">
+<body>
+
+<nav class="navbar navbar-inverse">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="mobile-navbar1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">HealthE</a>
+      </div>
+      <div class="collapse navbar-collapse" id="mobile-navbar1">
+          <div class="navigation-bar">
+              <ul class="nav navbar-nav navbar-right">
+                  <li><a href="index.html">Home</a></li>
+                  <li class="active"><a href="timer.html">Timer</a></li>
+                  <li><a href="#">Features</a></li>
+                  <li><a href="#">Demos</a></li>
+              </ul>
+          </div>
+      </div>
+</nav>
+
+
+<div class="test">
+    <h1 class="title">Health Timers</h1>
+    <h2 class="text">Default timers for your health!</h2>
+
+    <div class="all-btn">
+        <button class="btn btn-primary btn-lg start-all">Start All</button>
+        <button class="btn btn-success btn-lg reset-all">Reset All</button>
+        <button class="btn btn-danger btn-lg pause-all">Pause All</button>
+    </div>
+</div>
+<!--h2 class="text">Recommended</h2-->
+
+
+
+
+
+<table class="timer-table" style="width:100%;">
+    <tr>
+        <th>Name</th>
+        <th></th>
+        <th>Time</th>
+        <th>Buttons</th>
+    </tr>
+
+    <tr id="eyerest0">
+        <td class="timer-description">No Name</td>
+        <td>
+
+        </td>
+        <td class="timer text">00 : 00 : 00</td>
+        <td class="timer-buttons">
+            <div class="btn btn-primary btn-start btn-act">
+                Start
+            </div>
+            <div class="btn btn-success btn-reset btn-act">
+                Reset
+            </div>
+            <div class="btn btn-danger btn-pause btn-act">
+                Pause
+            </div>
+            <button type="button" class="btn btn-warning btn-disable btn-act">
+                <span class="glyphicon glyphicon-ban-circle btn-disable" aria-hidden="false"></span>
+            </button>
+        </td>
+
+
+    </tr>
+
+    <tr id="eyerest1">
+        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+        <td class="timer-description">www</td>
+        <td>
+
+        </td>
+        <td class="timer text">00 : 00 : 00</td>
+
+        <td class="timer-buttons">
+            <div class="btn btn-primary btn-start btn-act" >
+                Start
+            </div>
+            <div class="btn btn-success btn-reset btn-act">
+                Reset
+            </div>
+            <div class="btn btn-danger btn-pause btn-act">
+                Pause
+            </div>
+            <button type="button" class="btn btn-warning btn-disable btn-act">
+                <span class="glyphicon glyphicon-ban-circle" aria-hidden="false"></span>
+            </button>
+        </td>
+    </tr>
+
+    <tr id="eyerest2">
+        <td class="timer-description">www</td>
+        <td>
+        </td>
+        <td class="timer text">00 : 00 : 00</td>
+
+        <td class="timer-buttons">
+            <div class="btn btn-primary btn-start btn-act" >
+                Start
+            </div>
+            <div class="btn btn-success btn-reset btn-act">
+                Reset
+            </div>
+            <div class="btn btn-danger btn-pause btn-act">
+                Pause
+            </div>
+            <button type="button" class="btn btn-warning btn-disable btn-act">
+                <span class="glyphicon glyphicon-ban-circle" aria-hidden="false"></span>
+            </button>
+
+            <button type="button" class="btn btn-danger btn-remove btn-act">
+                <span class="glyphicon glyphicon-remove" aria-hidden="false"></span>
+            </button>
+        </td>
+    </tr>
+
+</table>
+<br>
+<div class="test">
+    <h1 class="title">Custom Timers</h1>
+    <h2 class="text">Set your own timers!</h2>
+</div>
+
+
+<h2 class="text">
+    Name:<input id = "name" maxlength="11" placeholder="Custom Name" style="color:black;">
+
+    <input id = "hour" class="timerInput" type="number" placeholder="00" min="00" max="99" oninput="format(this)">
+    h
+    <input id = "min" class="timerInput" type="number" placeholder="00" min="00" max="59" oninput="format(this)">
+    m
+    <input id = "sec" class="timerInput" type="number" placeholder="00" min="00" max="59" oninput="format(this)">
+    s
+    <button class="btn btn-primary btn-add">+</button>
+</h2>
+
+</div>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="main2.js"></script>
+<link rel="stylesheet" href="timer.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</div></body></html>

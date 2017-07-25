@@ -1,0 +1,88 @@
+/* Background */
+html{
+    height: 100%;
+    background-color: #303030;
+}
+
+.bg{
+    background-color: #303030;
+    height: 100%;
+
+}
+
+h1.title {
+    text-align: center;
+    color: 		#C0C0C0;
+    font-size: 6em
+}
+
+h2.text{
+    color: #C0C0C0;
+    text-align: center;
+}
+
+.all-btn{
+    text-align: center;
+}
+
+/* Navigation Bar CSS */
+div.navigation-bar{
+    margin-right: 100px;
+}
+
+.navbar-nav > li{
+  padding-left:10px;
+  padding-right:10px;
+}
+
+
+/* Timer CSS */
+.timer{
+    font-size: 3em;
+}
+
+.timerInput{
+    width: 2em;
+    min-width: 1em;
+    text-align: center;
+    color: black;
+}
+
+input{
+    text-align: center;
+}
+
+.text{
+    text-align: center;
+    color:white;
+    text-align: left;
+}
+
+.timer-buttons{
+    text-align: left;
+}
+
+.timer-description{
+    color:white;
+    font-size: 2em;
+    text-align: left;
+}
+
+/* Table CSS */
+
+th{
+    color: white;
+    font-size: 2em;
+}
+
+td .timer-description{
+    width:33%;
+}
+
+td .timer{
+    width:10%;
+}
+
+table{
+    margin-left: 5%;
+}

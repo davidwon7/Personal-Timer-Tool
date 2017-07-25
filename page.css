@@ -1,0 +1,83 @@
+/* Background */
+.bg{
+    background-color: 	#303030;
+    height: 100%;
+}
+
+/* Navigation Bar CSS */
+div.navigation-bar{
+    margin-right: 100px;
+}
+
+.navbar-nav > li{
+  padding-left:10px;
+  padding-right:10px;
+}
+
+/* Main Page CSS Setings -------------------- */
+
+/* Title CSS */
+div h1.title{
+    text-align: center;
+    color: 		#C0C0C0;
+    font-size: 6em
+}
+
+div h2.title{
+    text-align: center;
+    color:	#989898;
+    font-size: 3em
+}
+
+div h3.title{
+    text-align: center;
+    color: #585858;
+    font-size: 1.8em
+}
+
+/* Jumbotron CSS */
+div.jumbotron.dark{
+    background-color: #222;
+    margin-top: 0;
+    height: 25em;
+}
+
+div.jumbotron.light{
+    background-color: 	#909090;
+    height: 25em;
+}
+
+div h1.jtext{
+    text-align: center;
+    font-size: 5em;
+}
+
+/* List CSS */
+li.jbullet{
+    font-size: 2em;
+    text-align: left;
+}
+
+ul.jlist{
+    list-style-position: inside;
+    margin-left: 20em;
+    text-align: center;
+}
+
+.jlist{
+    list-style-type:square;
+}
+
+/* Button CSS */
+.btn{
+    height: 7em;
+    width: 50em;
+    text-align: center;
+}
+
+
+/* General Settings ------------------------------ */
+
+.center{
+    text-align: center;
+}
