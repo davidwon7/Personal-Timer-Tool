@@ -11,15 +11,16 @@ Might update new features later on.
 * Add timer function to add your own timers 
 * Customize the timer's name, alert message, and the length of the timer 
 * Windows Notification Used when timer is up! 
+* Saves your timers in HTML local storage (works when you load from the same device) 
 
 ## APIs Used: 
 * jQuery + Bootstrap Frameworks 
 * ![Sweet Alert API] (http://t4t5.github.io/sweetalert/)
 
 ---
-Not mobile compatible, as it uses windows notifications. No plans yet to make it mobile. 
+#### Not mobile compatible, as it uses windows notifications. No plans yet to make it mobile. 
 
-Feel free to use it, or fork it and make any changes! This is my first solo web-application project, to learn some HTML/CSS/JS + Bootstrap/jQuery. Hope you like it! 
+#### Feel free to use it, or fork it and make any changes! This is my first solo web-application project, to learn some HTML/CSS/JS + Bootstrap/jQuery. Hope you like it! 
 
 
 
