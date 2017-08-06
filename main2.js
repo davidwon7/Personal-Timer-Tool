@@ -120,6 +120,8 @@ $(document).ready(function(){
     });
 
     */
+
+    /* Add a new timer by clicking on the button below the timers */
     $('#add-timer').click(function(){
         var mainModal = $(this).parent().parent();
         var newH = mainModal.find('input[id="add-hour"]').val();
@@ -129,6 +131,7 @@ $(document).ready(function(){
         var newAlert = mainModal.find('textarea[id="add-timer-text"]').val();
         var totalSecs = Number(newH) * 60 * 60 + Number(newM) * 60 + Number(newS);
 
+        /* Append a new timer to the table */
         $(".timer-table").append(
             "<tr id='eyerest" + numberOfTimers + "'> \
                 \
@@ -179,7 +182,6 @@ $(document).ready(function(){
         $(timerObj.ref).text(showTimer(timerObj.totalSecs));
         $(timerObj.refName).text(timerObj.name);
         timerObjArray.push(timerObj);
-        //console.log("Name: " + addname.val() + " Secs: " + timerObj.secs);
         initializeButtons();
         numberOfTimers = Number(numberOfTimers);
         customTimers = Number(customTimers);
@@ -188,7 +190,7 @@ $(document).ready(function(){
         numberOfTimers += 1;
         localStorage.customTimers = customTimers;
         localStorage.numberOfTimers = numberOfTimers;
-        swal("Successfully Added!", "", "success")
+        swal("Successfully Added!", "", "success");
     });
 
     // Initialize a global timer - always runs on document load
@@ -202,6 +204,7 @@ $(document).ready(function(){
                 //console.log($(timerObjArray[i].ref).text());
                 $(timerObjArray[i].ref).text(showTimer(timerObjArray[i].secs));
                 if(timerObjArray[i].secs <= 0){
+                    timerObjArray[i].isStopped=true;
                     displayAlert(timerObjArray[i]);
                 }
                 console.log(timerObjArray[i].isStopped);
@@ -209,10 +212,11 @@ $(document).ready(function(){
         }
     }
 
+    /* Displays an alert to the user, and also a notification*/
     function displayAlert(alertTimer){
         var msg = alertTimer.alert;
         var name = alertTimer.name;
-        notifyMe();
+        notifyMe(name, msg);
         swal({
           title: "TIMER IS UP: " + name,
           text: "Alert: " + msg,
@@ -230,13 +234,13 @@ $(document).ready(function(){
     }
 
     //Specifically for Browser Notifications
-    function notifyMe() {
+    function notifyMe(name, msg) {
           if (Notification.permission !== "granted")
            Notification.requestPermission();
           else {
-            var notification = new Notification('Notification title', {
-              icon: 'http://cdn.sstatic.net/stackexchange/img/logos/so/so-icon.png',
-              body: "",
+            var notification = new Notification(name + "!", {
+              icon: '/Sand-Timer.png',
+              body: msg,
             });
 
             notification.onclick = function () {
