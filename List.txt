@@ -1,0 +1,9 @@
+List to do: 
+
+1. Get the edit timer and create timer functions all finished 
+2. Settle down on the UI - doing soon 
+
+Finish date: around saturday/sunday 
+
+
+

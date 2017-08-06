@@ -1,0 +1,108 @@
+/* Background */
+.bg{
+    background-color: 	#222;
+    height: 100%;
+}
+
+/* Navigation Bar CSS */
+div.navigation-bar{
+    margin-right: 200px;
+}
+
+.navbar-nav > li{
+  padding-left:10px;
+  padding-right:10px;
+}
+
+/* Main Page CSS Setings -------------------- */
+
+
+
+/* Title CSS */
+div h1.title{
+    text-align: center;
+    color: 		#C0C0C0;
+    font-size: 7vw;
+}
+
+h1.jtext{
+    text-align: center;
+    font-size: 7vw;
+}
+
+div h2.title{
+    text-align: center;
+    color:	#989898;
+    font-size: 3vw
+}
+
+div h3.title{
+    text-align: center;
+    color: #585858;
+    font-size: 1.8vw
+}
+
+/* Jumbotron CSS */
+div.jumbotron.dark{
+    background-color: #222;
+    margin-top: 0;
+    height: 38vw;
+    min-height: 280px;
+}
+
+div.jumbotron.light{
+    background-color: 	#909090;
+    height: 38vw;
+
+
+    min-height: 280px;
+}
+
+
+
+/* List CSS */
+li.jbullet{
+    font-size: 2vw;
+    text-align: left;
+}
+
+ul.jlist{
+    text-align: center;
+    margin-left:25%;
+    display: inline-block;
+
+}
+
+.jlist{
+    list-style-type:square;
+}
+
+
+/* Button CSS */
+.btn{
+    height: 7vw;
+    width: 50vw;
+    text-align: center;
+}
+
+/* Carousel CSS */
+ol.carousel-indicators li.carousel-li{
+    width: 5vw;
+}
+
+.container{
+    margin: 0px;
+    padding: 0;
+    height: 120%;
+    width: 100%;
+}
+
+.carousel.slide{
+    height: 100%;
+    width: 100%;
+}
+/* General Settings ------------------------------ */
+
+.center{
+    text-align: center;
+}

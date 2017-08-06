@@ -1,0 +1,247 @@
+/* Background and General CSS*/
+html{
+    height: 100%;
+    background-color: #303030;
+}
+
+.bg{
+    background-color: #303030;
+    height: 100%;
+}
+
+/* Navigation Bar CSS */
+div.navigation-bar{
+    margin-right: 200px;
+}
+
+.navbar-nav > li{
+  padding-left:10px;
+  padding-right:10px;
+}
+
+/* Header CSS */
+h1.title {
+    text-align: center;
+    color: 		#C0C0C0;
+    font-size: 6vw;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+h2.text{
+    color: #C0C0C0;
+    text-align: center;
+}
+
+.all-btn{
+    text-align: center;
+}
+
+
+/* Timer CSS */
+.timer{
+    font-size: 2.5vw;
+    width: 20%;
+    text-align: left;
+    color:white;
+}
+
+.timerInputtemp{
+    width: 3vw;
+    min-width: 2vw;
+    text-align: center;
+    color: black;
+}
+
+.form-group{
+    font-size: 1.5vw;
+}
+
+textarea{
+    font-size: 2vw;
+}
+
+.timerInput{
+    width: 15%;
+    font-size: 2.5vw;
+    margin-left:1vw;
+
+}
+
+.timer-input-label{
+    font-size: 2.5vw;
+    display: inline;
+}
+
+input{
+    text-align: center;
+}
+
+.timer-buttons{
+    text-align: left;
+    width: 20%;
+}
+
+.timer-buttons2{
+    width: 20%;
+}
+
+.btn-all{
+    font-size: 4vw;
+}
+
+.timer-description {
+    color:white;
+    font-size: 2.5vw;
+    text-align: left;
+    width: 35%;
+}
+
+.timer-custom{
+    width: 0.5%;
+}
+
+/* Button CSS */
+.btn-act{
+    white-space: normal !important;
+    word-wrap: break-word;
+    vertical-align: middle;
+    text-align: center;
+    display:block;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 4vw;
+}
+
+
+/* Glyphicon CSS */
+.glyph {
+    vertical-align: middle;
+    display: block;
+    text-align: center;
+}
+
+.glyphicon-star{
+    font-size: 1.3vw;
+    color:white;
+}
+/*
+.glyphicon-star {
+    width: 2vw;
+    font-size: 2vw;
+    color:white;
+    text-align: center;
+    margin-left: -5px;
+}
+
+.glyphicon{
+    font-size: 1.5vw;
+    text-align:center;
+}
+*/
+.modal-desc{
+    font-size: 1.5vw;
+}
+
+
+/* Table CSS */
+th {
+    color: white;
+    font-size: 2.5vw;
+}
+
+table tr th:nth-child(2){
+    width: 30px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+
+.table-container{
+    width: 95%;
+    margin:0 auto;
+}
+
+.table{
+    width: 100%;
+    table-layout: fixed;
+}
+
+
+/* Media Queries CSS */
+@media screen and (max-width: 940px){
+
+    /* Modals */
+    .modal-text{
+        font-size: 15px;
+    }
+
+    .modal-desc{
+        font-size: 15px;
+    }
+
+    .table{
+        width: 100%;
+    }
+    /* All buttons */
+    .btn-act{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        width:31px;
+        height: 32px;
+
+        text-align: left;
+    }
+
+    .glyphicon{
+        font-size: 11px;
+        margin-top: -5px;
+        margin-left: -5px;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+    /* Column 1 - Timer Name */
+    table tr th:nth-child(1){
+        width: 120px;
+        padding: 0;
+        margin: 0;
+    }
+    .timer-description {
+        font-size: 1.5em;
+        width: 230px;
+    }
+
+    /* Column 2 - Timer Custom Indicator */
+    table tr th:nth-child(2){
+        width: 30px;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Column 3 - Timer */
+    table tr th:nth-child(3){
+        width: 125px;
+        padding: 0;
+        margin: 0;
+    }
+    .timer{
+        font-size: 1.5em;
+        width: 220px;
+    }
+    /* Column 4 - Timer Buttons */
+    table tr th:nth-child(4){
+        width: 200px;
+        padding: 0;
+        margin: 0;
+    }
+    /* Column 5 - Edit Timer Buttons */
+    table tr th:nth-child(5){
+        width: 100px;
+        padding: 0;
+        margin: 0;
+    }
+    .timer-buttons2{
+        width: 600px;
+    }
+}

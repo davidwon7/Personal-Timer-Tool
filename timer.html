@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<div class="bg">
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mobile-navbar1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">HealthE</a>
+      </div>
+      <div class="collapse navbar-collapse" id="mobile-navbar1">
+          <div class="navigation-bar">
+              <ul class="nav navbar-nav navbar-right">
+                  <li><a href="index.html">Home</a></li>
+                  <li class="active"><a href="timer.html">Timer</a></li>
+                  <!--li><a href="features.html">Features</a></li-->
+              </ul>
+          </div>
+      </div>
+</nav>
+
+
+<div class="test" style="margin-top: 100px;">
+    <h1 class="title">Your Timers</h1>
+    <h2 class="text">Default timers are recommended for your health</h2>
+
+    <div class="all-btn" style="margin-bottom: 10px;">
+        <button class="btn btn-primary btn-lg start-all btn-all"><span class="btn-all-text">Start All</span></button>
+        <button class="btn btn-danger btn-lg pause-all btn-all"><span class="btn-all-text">Pause All</span></button>
+        <button class="btn btn-success btn-lg reset-all btn-all"><span class="btn-all-text">Reset All</span></button>
+    </div>
+</div>
+<!--h2 class="text">Recommended</h2-->
+
+
+
+
+<div class="table-container">
+<table class="table table-bordered timer-table">
+    <tr>
+        <th>Name</th>
+        <th><span class='glyphicon glyphicon-star' aria-hidden='true'></span></th>
+        <th>Time</th>
+        <th>Buttons</th>
+        <th>Edit</th>
+    </tr>
+
+    <tr id="eyerest0">
+        <!--td class="timer-description">No Name</td-->
+        <td class="timer-description">www</td>
+        <td class="timer-custom" valign="">
+                <!--span class='glyphicon glyphicon-star' aria-hidden='false'></span-->
+        <td class="timer text">00 : 00 : 00</td>
+        <td class="timer-buttons">
+            <div class="btn btn-primary btn-start btn-act">
+                <span class="glyphicon glyphicon-play" aria-hidden="false"></span>
+            </div>
+            <div class="btn btn-danger btn-pause btn-act">
+                <span class="glyphicon glyphicon-stop" aria-hidden="false"></span>
+            </div>
+            <div class="btn btn-success btn-reset btn-act">
+                <span class="glyphicon glyphicon-repeat" aria-hidden="false"></span>
+            </div>
+
+            <button type="button" class="btn btn-warning btn-disable btn-act">
+                <span class="glyphicon glyphicon-ban-circle btn-disable" aria-hidden="false"></span>
+            </button>
+
+        </td>
+        <td class="timer-buttons-2">
+        </td>
+
+    </tr>
+
+    <tr id="eyerest1">
+
+        <td class="timer-description">www</td>
+        <td class="timer-custom">
+
+        </td>
+        <td class="timer text">00 : 00 : 00</td>
+
+        <td class="timer-buttons">
+            <div class="btn btn-primary btn-start btn-act">
+                <span class="glyphicon glyphicon-play" aria-hidden="false"></span>
+            </div>
+            <div class="btn btn-danger btn-pause btn-act">
+                <span class="glyphicon glyphicon-stop" aria-hidden="false"></span>
+            </div>
+            <div class="btn btn-success btn-reset btn-act">
+                <span class="glyphicon glyphicon-repeat" aria-hidden="false"></span>
+            </div>
+                <button type="button" class="btn btn-warning btn-disable btn-act">
+                    <span class="glyphicon glyphicon-ban-circle" aria-hidden="false"></span>
+                </button>
+        </td>
+        <td class="timer-buttons-2">
+        </td>
+    </tr>
+
+    <tr id="eyerest2">
+        <td class="timer-description">www</td>
+        <td class="timer-custom">
+
+        </td>
+        <td class="timer text">00 : 00 : 00</td>
+
+        <td class="timer-buttons">
+            <div class="btn btn-primary btn-start btn-act">
+                <span class="glyphicon glyphicon-play" aria-hidden="false"></span>
+            </div>
+            <div class="btn btn-danger btn-pause btn-act">
+                <span class="glyphicon glyphicon-stop" aria-hidden="false"></span>
+            </div>
+            <div class="btn btn-success btn-reset btn-act">
+                <span class="glyphicon glyphicon-repeat" aria-hidden="false"></span>
+            </div>
+            <button type="button" class="btn btn-warning btn-disable btn-act">
+                <span class="glyphicon glyphicon-ban-circle" aria-hidden="false"></span>
+            </button>
+        </td>
+        <td class="timer-buttons-2">
+            <button type='button' class='btn btn-danger btn-remove btn-act'>
+                <span class='glyphicon glyphicon-remove' aria-hidden='false'></span>
+            </button>
+            <button type='button' class='btn btn-primary btn-edit-alert btn-act' data-toggle='modal' data-target='#editModal'>
+                <span class='glyphicon glyphicon-edit' aria-hidden='false'></span>
+            </button>
+        </td>
+    </tr>
+
+</table>
+<div class="add-new-timer" style="text-align:center;margin-top: -10px; padding: 0;">
+    <button class="btn btn-primary btn-lg" data-toggle='modal' data-target='#addModal'>Add new timer</button>
+    <button class="btn btn-danger btn-lg delete-all">Delete All</button>
+</div>
+
+</div>
+
+
+<div class="footer-container text-center">
+    <footer>
+        <hr>
+        <p class="footer-p">This Health-E Tool was created by David Won. </p>
+        <p class="footer-p">Check out some other projects on <a href="http://github.com/davidwon7">Github!</a>  </p>
+        <p class="footer-p">Also check out my  <a href="https://davidwon7.github.io">personal website!</a>  </p>
+
+    <div class="footer-div">
+        <a href="https://github.com/davidwon7" class="btn btn-social-ico">
+            <span class="fa fa-github fa-3x" style="color:white;"></span>
+        </a>
+        <a href="https://www.linkedin.com/in/david-won-b22ab2135/" class="btn btn-social-icon">
+            <span class="fa fa-linkedin fa-3x" style="color:white;"></span>
+        </a>
+    </div>
+    </footer>
+</div>
+
+</div>
+
+<div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h2 class="modal-title" id="exampleModalLabel" style="text-align:center;vertical-align:bottom;">Edit Custom Timer</h5>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="timer-name" class="form-control-label modal-text">Name:</label>
+            <input type="text" class="form-control modal-desc" id="timer-name">
+          </div>
+          <div class="form-group">
+            <label for="timer-text" class="form-control-label modal-text">Alert Message:</label>
+            <textarea class="form-control modal-desc" id="timer-text">a</textarea>
+          </div>
+          <div class="form-group">
+              <label for="timer-text" class="form-control-label modal-text">Set Timer:</label>
+              <input id = "hour" class="timerInput" type="number" placeholder="00" min="00" max="99" oninput="format(this)">
+              <div class='timer-input-label'>h :</div>
+              <input id = "min" class="timerInput" type="number" placeholder="00" min="00" max="59" oninput="format(this)">
+              <div class='timer-input-label'>m :</div>
+              <input id = "sec" class="timerInput" type="number" placeholder="00" min="00" max="59" oninput="format(this)">
+              <div class='timer-input-label'>s</div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" id="save-changes"class="btn btn-primary" data-dismiss="modal">Save Changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h2 class="modal-title" id="exampleModalLabel" style="text-align:center;vertical-align:bottom;">Add Custom Timer</h5>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="timer-name" class="form-control-label modal-text">Name:</label>
+            <input type="text" class="form-control modal-desc" id="add-timer-name" placeholder="My Custom Timer">
+          </div>
+          <div class="form-group">
+            <label for="timer-text" class="form-control-label modal-text">Alert Message:</label>
+            <textarea class="form-control modal-desc" id="add-timer-text" placeholder="Add a message here!"></textarea>
+          </div>
+          <div class="form-group">
+              <label for="timer-text" class="form-control-label modal-text">Set Timer:</label>
+              <input id = "add-hour" class="timerInput" type="number" placeholder="00" min="00" max="99" oninput="format(this)">
+              <div class='timer-input-label'>h :</div>
+              <input id = "add-min" class="timerInput" type="number" placeholder="00" min="00" max="59" oninput="format(this)">
+              <div class='timer-input-label'>m :</div>
+              <input id = "add-sec" class="timerInput" type="number" placeholder="00" min="00" max="59" oninput="format(this)">
+              <div class='timer-input-label'>s</div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" id="add-timer" class="btn btn-primary" data-dismiss="modal">Add Timer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script src="dist/sweetalert.min.js"></script>
+<link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="main2.js"></script>
+<link rel="stylesheet" href="timer.css">
+<link rel="stylesheet" href="footer.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</div></body></html>

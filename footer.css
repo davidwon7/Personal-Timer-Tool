@@ -1,0 +1,19 @@
+.footer-container{
+    background-color:#404040;
+
+}
+
+hr {
+    background-color: #404040;
+    color: #404040;
+}
+
+footer{
+    margin-top: 50px;
+    height: 100%;
+}
+
+.footer-p{
+    color: white;
+    font-size: 20px;
+}
