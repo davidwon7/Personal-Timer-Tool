@@ -238,13 +238,13 @@ $(document).ready(function(){
           if (Notification.permission !== "granted")
            Notification.requestPermission();
           else {
-            var notification = new Notification(name + "!", {
-              icon: '/Sand-Timer.png',
-              body: msg,
+            var notification = new Notification("Alert Name: " + name, {
+              icon: 'Sand-Timer.png',
+              body: "Your Message: " + msg,
             });
 
             notification.onclick = function () {
-             // window.open("http://stackoverflow.com/a/13328397/1269037");
+             window.open("http://stackoverflow.com/a/13328397/1269037");
              window.focus();
             };
         }
