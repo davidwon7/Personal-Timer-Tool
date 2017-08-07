@@ -3,7 +3,7 @@ A simple web application that helps remind you when to take breaks during long h
 
 Might update new features later on. 
 
-## Hosted in https://davidwon7.github.io/Personal-Timer-Tool 
+## Hosted ![HERE](https://davidwon7.github.io/healthe-timer-tool) Feel free to try it out!
 
 ---
 ## Features: 
@@ -15,7 +15,7 @@ Might update new features later on.
 
 ## APIs Used: 
 * jQuery + Bootstrap Frameworks 
-* ![Sweet Alert API] (http://t4t5.github.io/sweetalert/)
+* ![Sweet Alert API](http://t4t5.github.io/sweetalert/)
 
 ---
 #### Not mobile compatible, as it uses windows notifications. No plans yet to make it mobile. 
